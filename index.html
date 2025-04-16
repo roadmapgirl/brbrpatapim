@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrrBrr Patapim Coin - The Ultimate Meme Cryptocurrency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        memeYellow: '#FFD700',
+                        memeBlue: '#1DA1F2',
+                        memePink: '#FF69B4',
+                        memePurple: '#8A2BE2',
+                    },
+                    fontFamily: {
+                        comic: ['"Comic Sans MS"', 'cursive', 'sans-serif'],
+                        impact: ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .meme-text {
+            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        
+        .coin-spin {
+            animation: spin 4s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        
+        .meme-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .meme-btn:hover {
+            transform: scale(1.1) rotate(-5deg);
+        }
+        
+        .price-ticker {
+            animation: scroll 20s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .doge-bg {
+            background-image: url('');
+            background-size: 200px;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-memeYellow to-memePink min-h-screen font-comic">
+    <!-- Doge pattern background -->
+    <div class="doge-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-black text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="Brr_Brr_Patapim.webp" alt="BrrBrr Patapim Coin Logo" class="h-10 w-10">
+                <span class="text-2xl font-bold font-impact text-memeYellow">Brr Brr Patapim</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-memeYellow transition">About</a>
+                <a href="#roadmap" class="hover:text-memeYellow transition">Roadmap</a>
+                <a href="#buy" class="hover:text-memeYellow transition">How to Buy</a>
+                <a href="#community" class="hover:text-memeYellow transition">Community</a>
+            </div>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4 relative overflow-hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-impact mb-6 text-white meme-text">
+                    WOW. SUCH COIN. VERY MEME.
+                </h1>
+                <p class="text-xl mb-8 text-black font-bold">
+                    Join the meme revolution with TungTungTung Sahur Coin - where memes meet blockchain!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="bg-black text-green-400 px-8 py-4 rounded-full text-xl font-bold meme-btn">
+                        BUY NOW <i class="fas fa-rocket ml-2"></i>
+                    </button>
+                    <button class="bg-white text-black px-8 py-4 rounded-full text-xl font-bold meme-btn">
+                        WHITEPAPER <i class="fas fa-file-alt ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="Brr_Brr_Patapim.webp" 
+                     alt="BrrBrr Patapim Coin" 
+                     class="h-64 w-64 coin-spin">
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Ticker -->
+    <div class="bg-black text-white py-3 overflow-hidden">
+        <div class="price-ticker whitespace-nowrap">
+            <span class="text-memeYellow font-bold mx-4">BrrBrr Patapim: $0.00069</span>
+            <span class="text-green-400 mx-4">↑ 420.69%</span>
+            <span class="mx-4">Market Cap: $69,420,420</span>
+            <span class="text-memePink mx-4">Holders: 100,000+</span>
+            <span class="mx-4">24h Volume: $1,337,800</span>
+            <span class="text-memeYellow font-bold mx-4">BrrBrr Patapim: $0.00069</span>
+            <span class="text-green-400 mx-4">↑ 420.69%</span>
+            <span class="mx-4">Market Cap: $69,420,420</span>
+            <span class="text-memePink mx-4">Holders: 100,000+</span>
+            <span class="mx-4">24h Volume: $1,337,800</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-impact text-center mb-12 text-black meme-text">
+                WHAT IS BrrBrr Patapim?
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="hq720.jpg" alt="Doge meme" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-4">
+                        BrrBrr Patapim Coin is a revolutionary cryptocurrency that combines the power of memes with blockchain technology. 
+                        Born from the iconic Anomali meme, our coin represents the spirit of internet culture and decentralized finance.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Unlike other meme coins, BrrBrr Patapim has actual utility! We're building a meme marketplace, NFT platform, 
+                        and tipping system for content creators - all powered by $BrrBrr Patapim.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Our mission is simple: to the moon! 🚀 (and also to create a fun, inclusive community around memes and crypto)
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-memeYellow text-black px-4 py-2 rounded-full font-bold">
+                            <i class="fas fa-check-circle mr-2"></i> No Rug Pull
+                        </div>
+                        <div class="bg-memePink text-white px-4 py-2 rounded-full font-bold">
+                            <i class="fas fa-lock mr-2"></i> LP Locked
+                        </div>
+                        <div class="bg-memePurple text-white px-4 py-2 rounded-full font-bold">
+                            <i class="fas fa-certificate mr-2"></i> Audited
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-16 px-4 bg-black text-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-impact text-center mb-12 text-memeYellow meme-text">
+                ROADMAP (TO THE MOON)
+            </h2>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-memeYellow transform -translate-x-1/2"></div>
+                
+                <!-- Roadmap items -->
+                <div class="space-y-8 md:space-y-16">
+                    <!-- Phase 1 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12 mb-4 md:mb-0 md:pr-8 text-right">
+                            <div class="bg-memePink p-6 rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2">PHASE 1: LAUNCH</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Token creation</li>
+                                    <li>Website launch</li>
+                                    <li>Community building</li>
+                                    <li>First CEX listing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:w-2/12 flex justify-center">
+                            <div class="w-16 h-16 rounded-full bg-memeYellow flex items-center justify-center text-black font-bold text-xl">
+                                Q1
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Phase 2 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:block md:w-2/12 flex justify-center">
+                            <div class="w-16 h-16 rounded-full bg-memeYellow flex items-center justify-center text-black font-bold text-xl">
+                                Q2
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 mb-4 md:mb-0 md:pl-8">
+                            <div class="bg-memeBlue p-6 rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2">PHASE 2: GROWTH</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Meme marketplace beta</li>
+                                    <li>NFT collection drop</li>
+                                    <li>Major exchange listing</li>
+                                    <li>100k holders</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 3 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12 mb-4 md:mb-0 md:pr-8 text-right">
+                            <div class="bg-memePurple p-6 rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2">PHASE 3: UTILITY</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Meme tipping platform</li>
+                                    <li>DAO governance</li>
+                                    <li>Merch store</li>
+                                    <li>Charity donations</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:w-2/12 flex justify-center">
+                            <div class="w-16 h-16 rounded-full bg-memeYellow flex items-center justify-center text-black font-bold text-xl">
+                                Q3
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Phase 4 -->
+                    <div class="relative md:flex justify-between items-center">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:block md:w-2/12 flex justify-center">
+                            <div class="w-16 h-16 rounded-full bg-memeYellow flex items-center justify-center text-black font-bold text-xl">
+                                Q4
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 mb-4 md:mb-0 md:pl-8">
+                            <div class="bg-green-500 p-6 rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2">PHASE 4: MOON</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>1M+ holders</li>
+                                    <li>Top 100 coin</li>
+                                    <li>Mainstream adoption</li>
+                                    <li>BrrBrr Patapim ecosystem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="buy" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-impact text-center mb-12 text-black meme-text">
+                HOW TO BUY (VERY EASY)
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-gradient-to-br from-memeYellow to-memePink p-1 rounded-xl">
+                    <div class="bg-white p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-5xl font-impact text-memeYellow mb-4">1</div>
+                        <h3 class="text-2xl font-bold mb-4">Get a Wallet</h3>
+                        <p class="mb-4 flex-grow">
+                            Download MetaMask or Trust Wallet and set it up. Make sure to keep your seed phrase safe!
+                        </p>
+                        <div class="flex justify-center space-x-4">
+                            <img src="https://cryptologos.cc/logos/metamask-mask-logo.png" alt="MetaMask" class="h-10">
+                            <img src="https://cryptologos.cc/logos/trust-wallet-twt-logo.png" alt="Trust Wallet" class="h-10">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-gradient-to-br from-memePink to-memePurple p-1 rounded-xl">
+                    <div class="bg-white p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-5xl font-impact text-memePink mb-4">2</div>
+                        <h3 class="text-2xl font-bold mb-4">Get Some SOL</h3>
+                        <p class="mb-4 flex-grow">
+                            Buy SOL on Binance or any exchange, then send it to your wallet. You'll need this to swap for BrrBrr Patapim.
+                        </p>
+                        <div class="flex justify-center">
+                            <img src="https://cryptologos.cc/logos/SOL-SOL-logo.png" alt="SOL" class="h-10">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-gradient-to-br from-memePurple to-memeBlue p-1 rounded-xl">
+                    <div class="bg-white p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-5xl font-impact text-memePurple mb-4">3</div>
+                        <h3 class="text-2xl font-bold mb-4">Swap on PUMPFUN</h3>
+                        <p class="mb-4 flex-grow">
+                            Connect your wallet to PUMPFUN, paste our contract address, and swap SOL for BrrBrr Patapim!
+                        </p>
+                        <div class="flex justify-center">
+                            <img src="https://cryptologos.cc/logos/PUMPFUN-cake-logo.png" alt="PUMPFUN" class="h-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-black text-white p-6 rounded-xl max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-memeYellow mb-4 text-center">Contract Address</h3>
+                <div class="bg-gray-800 p-4 rounded-lg flex items-center justify-between overflow-x-auto">
+                    <code class="font-mono">DASFADAD</code>
+                    <button class="bg-memeYellow text-black px-4 py-2 rounded ml-4 font-bold">
+                        <i class="fas fa-copy mr-2"></i> Copy
+                    </button>
+                </div>
+                <p class="text-center mt-4 text-sm text-gray-300">
+                    Always verify the contract address on our official channels before buying!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-16 px-4 bg-gradient-to-r from-memeBlue to-memePurple">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-impact text-center mb-12 text-white meme-text">
+                JOIN OUR COMMUNITY (WOW)
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <!-- Telegram -->
+                <a href="#" class="bg-white p-6 rounded-xl text-center hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-3">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Telegram</h3>
+                    <p class="text-sm">10,000+ members</p>
+                </a>
+                
+                <!-- Twitter -->
+                <a href="#" class="bg-white p-6 rounded-xl text-center hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-blue-400 mb-3">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Twitter</h3>
+                    <p class="text-sm">50,000+ followers</p>
+                </a>
+                
+                <!-- Discord -->
+                <a href="#" class="bg-white p-6 rounded-xl text-center hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-indigo-500 mb-3">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Discord</h3>
+                    <p class="text-sm">5,000+ members</p>
+                </a>
+                
+                <!-- Reddit -->
+                <a href="#" class="bg-white p-6 rounded-xl text-center hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-orange-500 mb-3">
+                        <i class="fab fa-reddit"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Reddit</h3>
+                    <p class="text-sm">1,000+ memers</p>
+                </a>
+            </div>
+            
+            <div class="mt-12 bg-black bg-opacity-50 p-6 rounded-xl max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-memeYellow mb-4 text-center">Meme Contest</h3>
+                <p class="text-center mb-6">
+                    Submit your best BrrBrr Patapim memes for a chance to win 1,000,000 $BrrBrr Patapim!
+                </p>
+                <div class="flex justify-center">
+                    <button class="bg-memePink text-white px-6 py-3 rounded-full font-bold hover:bg-memePurple transition">
+                        Submit Meme <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://cryptologos.cc/logos/dogecoin-doge-logo.png" alt="BrrBrr Patapim Coin Logo" class="h-10 w-10">
+                    <span class="text-2xl font-bold font-impact text-memeYellow ml-2">BrrBrr Patapim</span>
+                </div>
+                
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="text-xl hover:text-memeYellow transition">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" class="text-xl hover:text-memeYellow transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-xl hover:text-memeYellow transition">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="text-xl hover:text-memeYellow transition">
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                    <a href="#" class="text-xl hover:text-memeYellow transition">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p>© 2023 BrrBrr Patapim Coin. All rights reserved.</p>
+                    <p class="text-sm text-gray-500">Not financial advice. Do your own research.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-memeYellow text-black w-12 h-12 rounded-full flex items-center justify-center shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Copy contract address
+        const copyButton = document.querySelector('button:has(.fa-copy)');
+        if (copyButton) {
+            copyButton.addEventListener('click', () => {
+                const contractAddress = '0x42069D0D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D';
+                navigator.clipboard.writeText(contractAddress);
+                
+                // Change button text temporarily
+                const originalText = copyButton.innerHTML;
+                copyButton.innerHTML = '<i class="fas fa-check mr-2"></i> Copied!';
+                
+                setTimeout(() => {
+                    copyButton.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+        
+        // Animate meme buttons on hover
+        const memeButtons = document.querySelectorAll('.meme-btn');
+        memeButtons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = 'scale(1.1) rotate(-5deg)';
+            });
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = '';
+            });
+        });
+    </script>
+</body>
+</html>
